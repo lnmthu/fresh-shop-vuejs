@@ -10,6 +10,7 @@
     "npm": "1.4.29"
   },
   "scripts": {
+    "start": "node index.js",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
     "heroku-postbuild": "npm run build"
@@ -21,6 +22,7 @@
     "moment-parseplus": "^1.1.6",
     "popper.js": "^1.16.1",
     "serve": "^11.3.2",
+    "sync-exec": "^0.6.2",
     "vee-validate": "^3.4.2",
     "vue": "^2.5.11",
     "vue-axios": "^3.1.1",
