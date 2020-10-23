@@ -6,10 +6,10 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
-    "start": "node server.js",
-    "lint": "eslint ."
+    "build": "vue-cli-service build",
+    "serve": "vue-cli-service serve",
+    "lint": "vue-cli-service lint",
+    "start": "node server.js"
   },
   "dependencies": {
     "axios": "^0.20.0",
