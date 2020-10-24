@@ -1,4 +1,4 @@
-import {Home} from './views/Home/index.vue'
+import Home from './views/Home/index.vue'
 import DetailProduct from './views/DetailProduct/index.vue'
 import Shop from './views/Shop/index.vue'
 import PaginateProduct from './views/Shop/components/PaginateProduct.vue'

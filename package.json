@@ -13,6 +13,7 @@
     "axios": "^0.20.0",
     "bulma": "^0.9.1",
     "jquery": "^3.5.1",
+    "milsymbol": "^2.0.0",
     "moment-parseplus": "^1.1.6",
     "popper.js": "^1.16.1",
     "vee-validate": "^3.4.2",
