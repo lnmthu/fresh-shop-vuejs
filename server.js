@@ -1,11 +1,12 @@
-const express = require('express');
-const path = require('path');
-const app = express();
-
-app.use(express.static(__dirname + '/dist/frontend'));
-app.get('/*', function(req,res) {
-res.sendFile(path.join(__dirname + '/dist/frontend/index.html'));
-
+var express = require('express');
+var path = require('path');
+var serveStatic = require('serve-static'); 
+app = express();
+app.use(serveStatic(__dirname + "/dist/")); 
+app.route('/*')
+    .get(function(req, res) {
+          res.sendFile(path.join(__dirname + '/index.html'));
 });
-
-app.listen(process.env.PORT || 8080);
+var port = process.env.PORT || 5000;
+app.listen(port);
+module.exports = app;
