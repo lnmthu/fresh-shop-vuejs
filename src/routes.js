@@ -1,13 +1,13 @@
-Home = require('./views/Home/index.vue')
-DetailProduct = require('./views/DetailProduct/index.vue')
-Shop = require('./views/Shop/index.vue')
-PaginateProduct = require('./views/Shop/components/PaginateProduct.vue')
-PaginateProductOfCategory = require('./views/Shop/components/PaginateProductOfCategory.vue')
-Blog = require('./views/Blog/index.vue')
-PaginateBlog = require('./views/Blog/components/PaginateBlog.vue')
-PaginateBlogOfCategory = require('./views/Blog/components/PaginateBlogOfCategory.vue')
-DetailBlog = require('./views/DetailBlog/index.vue')
-Contact = require('./views/Contact/index.vue')
+import Home from './views/Home/index.vue'
+import DetailProduct from './views/DetailProduct/index.vue'
+import Shop from './views/Shop/index.vue'
+import PaginateProduct from './views/Shop/components/PaginateProduct.vue'
+import PaginateProductOfCategory from './views/Shop/components/PaginateProductOfCategory.vue'
+import Blog from './views/Blog/index.vue'
+import PaginateBlog from './views/Blog/components/PaginateBlog.vue'
+import PaginateBlogOfCategory from './views/Blog/components/PaginateBlogOfCategory.vue'
+import DetailBlog from './views/DetailBlog/index.vue'
+import Contact from './views/Contact/index.vue'
 export const routes = [
     { path: "", name: "home", component: Home },
 
