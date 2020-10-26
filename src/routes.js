@@ -8,7 +8,7 @@ PaginateBlog = require('./views/Blog/components/PaginateBlog.vue')
 PaginateBlogOfCategory = require('./views/Blog/components/PaginateBlogOfCategory.vue')
 DetailBlog = require('./views/DetailBlog/index.vue')
 Contact = require('./views/Contact/index.vue')
-export const routes = [
+module.export const routes = [
     { path: "", name: "home", component: Home },
 
     {
