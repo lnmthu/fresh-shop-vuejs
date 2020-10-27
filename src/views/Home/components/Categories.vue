@@ -28,7 +28,7 @@
       </div>
     </div>
   </section> -->
-  <section class="categories">
+  <!-- <section class="categories">
         <div class="container">
             <div class="row">
                 <div class="categories__slider owl-carousel">
@@ -60,7 +60,8 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
+    <div></div>
 </template>
 
 <script>
