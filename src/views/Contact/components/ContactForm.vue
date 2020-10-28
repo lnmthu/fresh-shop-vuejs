@@ -78,7 +78,7 @@ export default {
     },
     methods:{
         onSubmit(){
-            this.$http.post("http://laravue.test/api/contact",this.postForm).then((response) => {
+            this.$http.post("https://goshopp.tk/api/contact",this.postForm).then((response) => {
               this.success="Message was sent"
         }, (error) => { console.log(error) });
     },
