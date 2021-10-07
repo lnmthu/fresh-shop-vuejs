@@ -15,7 +15,7 @@ const mutations={
 }
 const actions={
     loadListCategory({ commit }) {
-        axios.get("https://goshopp.tk/api/all-categories").then((response) => {
+        axios.get("https://goshopp.ml/api/all-categories").then((response) => {
             commit("setListCategory", response.data.data);
         }, (error) => { console.log(error) });
     },
