@@ -47,13 +47,13 @@ const mutations = {
 const actions = {
     loadListProduct({ commit }) {
         var newArr = [];
-        axios.get("https://oganyymanagement.tk/api/all-products").then((response) => {
+        axios.get("https://fruitadmin.tk/api/all-products").then((response) => {
             commit("setListProduct", response.data.data);
         }, (error) => { console.log(error) });
     },
     loadCurrentProduct({ commit }, unique_id) {
         if (Number.isInteger(Number(unique_id))) {
-            axios.get("https://oganyymanagement.tk/api/products/" + unique_id)
+            axios.get("https://fruitadmin.tk/api/products/" + unique_id)
                 .then((response) => {
                     commit("setCurrentProduct", response.data.data);
                 }, (error) => { console.log(error) });
@@ -62,7 +62,7 @@ const actions = {
     },
 
     loadListProductPaginate({ commit, rootState }) {
-        axios.get("https://oganyymanagement.tk/api/products" + "?limit=" + rootState.listQuery.limit + "&&page=" + rootState.listQuery.page)
+        axios.get("https://fruitadmin.tk/api/products" + "?limit=" + rootState.listQuery.limit + "&&page=" + rootState.listQuery.page)
             .then((response) => {
                 commit("setListProductPaginate", response.data.data);
                 commit("setNumberPaginate", response.data.meta);
@@ -70,7 +70,7 @@ const actions = {
     },
     loadListProOfCatePaginate({ commit, rootState }, category_unique_id) {
         if (Number.isInteger(Number(category_unique_id))) {
-            axios.get("https://oganyymanagement.tk/api/products-with-category/" + category_unique_id
+            axios.get("https://fruitadmin.tk/api/products-with-category/" + category_unique_id
                 + "?limit=" + rootState.listQuery.limit + "&&page=" + rootState.listQuery.page)
                 .then((response) => {
                     commit("setListProOfCatePaginate", response.data.data);
