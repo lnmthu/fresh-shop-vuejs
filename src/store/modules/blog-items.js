@@ -46,13 +46,13 @@ const mutations = {
 }
 const actions = {
     loadListBlogItems({ commit }) {
-        axios.get("https://goshopp.ml/api/all-blog-items").then((response) => {
+        axios.get("https://oganyymanagement.tk/api/all-blog-items").then((response) => {
             commit("setListBlogItems", response.data.data);
         }, (error) => { console.log(error) });
     },
     loadCurrentBlog({ commit }, unique_id) {
         if (Number.isInteger(Number(unique_id))) {
-            axios.get("https://goshopp.ml/api/blog-items/" + unique_id)
+            axios.get("https://oganyymanagement.tk/api/blog-items/" + unique_id)
                 .then((response) => {
                     commit("setCurrentBlog", response.data.data);
                 }, (error) => { console.log(error) });
@@ -60,7 +60,7 @@ const actions = {
         }
     },
     loadListBlogItemsPaginate({ commit, rootState }) {
-        axios.get("https://goshopp.ml/api/blog-items" + "?limit=" + rootState.listQuery.limit + "&&page=" + rootState.listQuery.page)
+        axios.get("https://oganyymanagement.tk/api/blog-items" + "?limit=" + rootState.listQuery.limit + "&&page=" + rootState.listQuery.page)
             .then((response) => {
                 commit("setListBlogItemsPaginate", response.data.data);
                 commit("setNumberPaginate", response.data.meta);
@@ -68,7 +68,7 @@ const actions = {
     },
     loadListBlogOfCategoryPaginate({ commit, rootState }, category_unique_id) {
         if (Number.isInteger(Number(category_unique_id))) {
-            axios.get("https://goshopp.ml/api/paginate-blog-category/" + category_unique_id
+            axios.get("https://oganyymanagement.tk/api/paginate-blog-category/" + category_unique_id
                 + "?limit=" + rootState.listQuery.limit + "&&page=" + rootState.listQuery.page)
                 .then((response) => {
                     commit("setListBlogOfCategoryPaginate", response.data.data);
