@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="contact__form__title">
-            <h2>Leave Message</h2>
+            <h2>Liên hệ</h2>
           </div>
         </div>
       </div>
@@ -18,7 +18,7 @@
               rules="required"
               v-slot="{ errors }"
             >
-              <input type="text" v-model.lazy="postForm.name" placeholder="Your name" />
+              <input type="text" v-model.lazy="postForm.name" placeholder="Họ và tên" />
               <span class="error">{{ errors[0] }}</span>
             </ValidationProvider>
           </div>
@@ -31,7 +31,7 @@
               <input
                 v-model.lazy="postForm.email"
                 type="text"
-                placeholder="Your Email"
+                placeholder="Email của bạn"
               />
               <span class="error">{{ errors[0] }}</span>
             </ValidationProvider>
@@ -42,10 +42,10 @@
               rules="required"
               v-slot="{ errors }"
             >
-            <textarea v-model.lazy="postForm.message" placeholder="Your message"></textarea>
+            <textarea v-model.lazy="postForm.message" placeholder="Lời nhắn"></textarea>
             <span class="error">{{ errors[0] }}</span>
             </ValidationProvider>
-      <button type="submit" :disabled="invalid" class="site-btn">SEND MESSAGE</button>
+      <button type="submit" :disabled="invalid" class="site-btn">Gửi</button>
           </div>
         </div>
       </form>

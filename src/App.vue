@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <MenuWrapper />
     <Header />
       <keep-alive>
         <router-view />
@@ -19,7 +18,6 @@ import Footer from "./components/Footer/index.vue";
 export default {
   name: "app",
   components:{
-    MenuWrapper,
     Header,
     Footer
   }

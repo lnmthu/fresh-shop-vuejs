@@ -13,15 +13,15 @@
         </div>
         <div class="col-lg-4 col-md-4">
           <div class="filter__found">
-            <h6><span>{{numberPaginate.total}}</span> Products found</h6>
+            <h6><span>{{numberPaginate.total}}</span> Sản phẩm được tìm thấy</h6>
           </div>
         </div>
-        <div class="col-lg-4 col-md-3">
+        <!-- <div class="col-lg-4 col-md-3">
           <div class="filter__option">
             <span class="icon_grid-2x2"></span>
             <span class="icon_ul"></span>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
     <div class="row">
@@ -92,10 +92,10 @@ export default {
         button: "page-link",
       },
       paginationAnchorTexts: {
-        first: "First",
-        prev: "Previous",
-        next: "Next",
-        last: "Last",
+        first: "Trang nhất",
+        prev: "Trang trước đó",
+        next: "Trang kế tiếp",
+        last: "Trang cuối",
       },
     };
   },
@@ -119,7 +119,7 @@ export default {
     }
 
   },
- 
+
 };
 </script>
 

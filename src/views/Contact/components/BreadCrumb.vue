@@ -4,10 +4,10 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="breadcrumb__text">
-                        <h2>Contact Us</h2>
+                        <h2>Liên hệ chúng tôi</h2>
                         <div class="breadcrumb__option">
-                            <a href="./index.html">Home</a>
-                            <span>Contact Us</span>
+                            <a href="./index.html">Trang chủ</a>
+                            <span>Liên hệ</span>
                         </div>
                     </div>
                 </div>
@@ -18,7 +18,7 @@
 
 <script>
     export default {
-        
+
     }
 </script>
 

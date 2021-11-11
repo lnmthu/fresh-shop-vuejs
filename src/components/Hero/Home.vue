@@ -6,7 +6,7 @@
           <div class="hero__categories">
             <div class="hero__categories__all">
               <i class="fa fa-bars"></i>
-              <span>Các loại trái cây</span>
+              <span>Loại sản phẩm</span>
             </div>
             <ul>
               <li v-for="(value, index) in listCategory" :key="index">
