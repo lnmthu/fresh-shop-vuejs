@@ -1,20 +1,5 @@
 <template>
-    <section class="breadcrumb-section set-bg" data-setbg="dist/img/breadcrumb.jpg" style="background-image: 'dist/img/breadcrumb.jpg'">
-        <div class="container" style="background-image: 'dist/img/breadcrumb.jpg'">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <div class="breadcrumb__text">
-            <h2>{{ currentProduct.name }}</h2>
-            <div class="breadcrumb__option">
-              <a href="./index.html">Home</a>
-              <!-- <a href="./index.html"></a> -->
-              <span>{{ currentProduct.name }}</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+
 </template>
 
 <script>

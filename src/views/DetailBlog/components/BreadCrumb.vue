@@ -1,19 +1,5 @@
 <template>
-    <section class="breadcrumb-section set-bg" data-setbg="dist/img/breadcrumb.jpg" style="background-image: 'dist/img/breadcrumb.jpg'">
-        <div class="container" style="background-image: 'dist/img/breadcrumb.jpg'">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="blog__details__hero__text">
-                        <h2 v-html="currentBlog.title"></h2>
-                        <ul>
-                            <!-- <li>By {{currentBlog.user}}</li> -->
-                            <li>{{ formatDate(currentBlog.created_at) }}</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+   
 </template>
 
 <script>
