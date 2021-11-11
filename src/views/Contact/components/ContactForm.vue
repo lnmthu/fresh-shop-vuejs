@@ -91,7 +91,7 @@ export default {
               this.isLoading = true;
             this.$http.post("https://fruitadmin.tk/api/contact",this.postForm).then((response) => {
               this.isLoading = false;
-              this.success="Dạ cảm ơn bạn đã để lại lại nhắn cho FruitShop."
+              this.success="Dạ cảm ơn bạn đã để lại lại nhắn cho FreshShop."
         }, (error) => { console.log(error) });
         },
     },
