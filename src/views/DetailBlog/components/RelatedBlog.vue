@@ -21,7 +21,7 @@
           <div class="blog__item">
 
             <div class="blog__item__pic"
-           :style="{ backgroundImage: 'url(' + value.image_uri + ')' }"
+           :style="{ backgroundImage: 'url(' + value.image + ')' }"
             >
             </div>
             <div class="blog__item__text">

@@ -23,11 +23,15 @@
                     <img :src="product.image_uri" alt="" />
                   </div>
                    <ul class="product__item__pic__hover">
-              <li>
-                <a><i class="fa fa-heart"></i></a>
-              </li>
+                       <div class="header__cart">
+                          <ul>
+                            <li>
+                              <a href=""><i class="fa fa-heart"></i> <span>1</span></a>
+                            </li>
 
-            </ul>
+                          </ul>
+                          <div class="header__cart__price">item: <span>$150.00</span></div>
+                        </div>
                   <div class="latest-product__item__text">
                     <h6>{{ product.name }}</h6>
                     <span>{{ product.price }}</span>

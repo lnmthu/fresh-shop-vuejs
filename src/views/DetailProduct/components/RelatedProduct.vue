@@ -36,12 +36,11 @@
             <div class="product__item__text">
               <h6>
                 {{ value.name }}
-                >
               </h6>
               <h5>{{ value.price }}</h5>
             </div>
           </div>
-          </router-link
+          </router-link>
         </div>
       </div>
     </div>

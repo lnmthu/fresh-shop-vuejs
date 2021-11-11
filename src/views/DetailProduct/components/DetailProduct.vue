@@ -61,8 +61,8 @@
             <!-- <a href="#" class="primary-btn">Thêm vào giỏ hàng</a>
             <a href="#" class="heart-icon" -->
               <!-- ><span class="icon_heart_alt"></span -->
-            ></a>
-            <ul>
+            <!-- </a> -->
+            <!-- <ul>
               <li><b>Availability</b> <span>In Stock</span></li>
               <li>
                 <b>Shipping</b>
@@ -70,7 +70,7 @@
               </li>
               <li><b>Weight</b> <span>0.5 kg</span></li>
 
-            </ul>
+            </ul> -->
           </div>
         </div>
         <div class="col-lg-12">
