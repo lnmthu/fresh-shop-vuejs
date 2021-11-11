@@ -13,21 +13,21 @@
                     <div class="contact__widget">
                         <span class="icon_pin_alt"></span>
                         <h4>Địa chỉ</h4>
-                        <p>60-49 Road 11378 New York</p>
+                        <p>Thủ Đức, TP HCM</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6 text-center">
                     <div class="contact__widget">
                         <span class="icon_clock_alt"></span>
                         <h4>Thời gian mở cửa</h4>
-                        <p>10:00 am to 23:00 pm</p>
+                        <p>7:00 đến 21:00</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6 text-center">
                     <div class="contact__widget">
                         <span class="icon_mail_alt"></span>
                         <h4>Email</h4>
-                        <p>hello@colorlib.com</p>
+                        <p>thuicetea@gmail.com</p>
                     </div>
                 </div>
             </div>
