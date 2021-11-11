@@ -45,8 +45,14 @@
             </ValidationProvider>
                   <p v-if="success" class="success">{{success}}</p>
         <ValidationObserver v-slot="{ invalid }">
-          
-      <button type="submit" :disabled="invalid" class="site-btn">Gửi</button>
+
+  <VueLoadingButton
+      type="submit"
+      class="button"
+      :loading="isLoading"
+      styled="style"
+    >Gửi</VueLoadingButton>
+      <!-- <button  :disabled="invalid" class="site-btn">Gửi</button> -->
           </div>
         </div>
       </form>
@@ -58,6 +64,8 @@
 <script>
 import { extend } from "vee-validate";
 import { required, email } from "vee-validate/dist/rules";
+import VueLoadingButton from "vue-loading-button";
+
 extend("email", {
     ...email,
   message: "{_field_}  is not valid",
@@ -69,22 +77,27 @@ extend("required", {
 export default {
     data(){
         return {
-            indexClicked: undefined, // Some predefined value
+            isLoading: false,
             postForm:{
                 name:null,
                 email:null,
                 message:null
             },
-              success:null,
+           success:null,
         }
     },
     methods:{
         onSubmit(){
+              this.isLoading = true;
             this.$http.post("https://fruitadmin.tk/api/contact",this.postForm).then((response) => {
+              this.isLoading = false;
               this.success="Dạ cảm ơn bạn đã để lại lại nhắn cho FruitShop."
         }, (error) => { console.log(error) });
+        },
     },
-        }
+    components: {
+        VueLoadingButton
+    }
 };
 </script>
 
@@ -104,3 +117,4 @@ text-align: center;
 }
 
 </style>
+
