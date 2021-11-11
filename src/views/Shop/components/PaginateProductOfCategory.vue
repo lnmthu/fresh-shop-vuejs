@@ -24,7 +24,7 @@
                     name: 'detailProduct',
                     params: { unique_id: product.unique_id },
                   }"
-                  >
+      >
         <div class="product__item">
           <div
             class="product__item__pic set-bg"

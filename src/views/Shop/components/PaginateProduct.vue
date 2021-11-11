@@ -30,12 +30,14 @@
         v-for="(product, index) in listProductPaginate"
         :key="index"
       >
-      <router-link>
+      <router-link
                   tag="a"
                   :to="{
                     name: 'detailProduct',
                     params: { unique_id: product.unique_id },
                   }"
+      >
+
         <div class="product__item">
           <div
             class="product__item__pic set-bg"
