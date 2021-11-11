@@ -89,7 +89,7 @@ export default {
     methods:{
         onSubmit(){
               this.isLoading = true;
-            this.$http.post("https://fruitadmin.tk/api/contact",this.postForm).then((response) => {
+            this.$http.post("https://freshshopadmin.tk/api/contact",this.postForm).then((response) => {
               this.isLoading = false;
               this.success="Dạ cảm ơn bạn đã để lại lại nhắn cho FreshShop."
         }, (error) => { console.log(error) });

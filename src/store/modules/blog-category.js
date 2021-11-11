@@ -15,7 +15,7 @@ const mutations={
 }
 const actions={
     loadListBlogCategory({ commit }) {
-        axios.get("https://fruitadmin.tk/api/all-blog-categories").then((response) => {
+        axios.get("https://freshshopadmin.tk/api/all-blog-categories").then((response) => {
             commit("setListBlogCategory", response.data.data);
         }, (error) => { console.log(error) });
     },
