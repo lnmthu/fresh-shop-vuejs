@@ -1,5 +1,5 @@
 <template>
-<section class="blog-details-hero set-bg" data-setbg="dist/img/blog/details/details-hero.jpg">
+    <section class="breadcrumb-section set-bg" data-setbg="dist/img/breadcrumb.jpg" style="background-image: 'dist/img/breadcrumb.jpg'">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">

@@ -51,16 +51,16 @@
             </div>
             <p v-html="currentProduct.description">
             </p>
-            <div class="product__details__quantity">
+            <!-- <div class="product__details__quantity">
               <div class="quantity">
                 <div class="pro-qty">
                   <input type="text" value="1" />
                 </div>
               </div>
-            </div>
-            <a href="#" class="primary-btn">Thêm vào giỏ hàng</a>
-            <a href="#" class="heart-icon"
-              ><span class="icon_heart_alt"></span
+            </div> -->
+            <!-- <a href="#" class="primary-btn">Thêm vào giỏ hàng</a>
+            <a href="#" class="heart-icon" -->
+              <!-- ><span class="icon_heart_alt"></span -->
             ></a>
             <ul>
               <li><b>Availability</b> <span>In Stock</span></li>
