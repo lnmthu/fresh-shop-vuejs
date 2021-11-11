@@ -7,7 +7,7 @@
             <div class="header__top__left">
               <ul>
                 <li><i class="fa fa-envelope"></i> thuicetea@gmail.com</li>
-                <li><i class="fa fa-phone"></i> 0161 123 3221</li>
+                <li><i class="fa fa-phone"></i> 0979 4988 45</li>
               </ul>
             </div>
           </div>
@@ -27,7 +27,7 @@
                   <li><a href="#">Spanis</a></li>
                   <li><a href="#">English</a></li>
                 </ul> -->
-              </div> -->
+              </div>
               <!-- <div class="header__top__right__auth">
                 <a href="#"><i class="fa fa-user"></i> Login</a>
               </div> -->
@@ -49,14 +49,14 @@
               <li>
                 <router-link to="/" tag="a" active-class="active" exact
                   >Trang chủ</router-link>
-                <li><router-link to="/shop" tag="a" active-class="active" exact>Shop</router-link></li>
+                <li><router-link to="/shop" tag="a" active-class="active" exact>Cửa hàng</router-link></li>
 
-                <li><router-link to="/blog" tag="a" active-class="active" exact>Blog</router-link></li>
+                <li><router-link to="/blog" tag="a" active-class="active" exact>Bài viết</router-link></li>
                 <li><router-link to="/contact" tag="a" active-class="active" exact>Liên hệ</router-link></li>
             </ul>
           </nav>
         </div>
-        <div class="col-lg-3">
+        <!-- <div class="col-lg-3">
           <div class="header__cart">
             <ul>
               <li>
@@ -70,7 +70,7 @@
             </ul>
             <div class="header__cart__price">item: <span>$150.00</span></div>
           </div>
-        </div>
+        </div> -->
       </div>
       <div class="humberger__open">
         <i class="fa fa-bars"></i>

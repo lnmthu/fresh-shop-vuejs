@@ -4,10 +4,10 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="breadcrumb__text">
-                        <h2>Organi Shop</h2>
+                        <h2>Cửa hàng Organi</h2>
                         <div class="breadcrumb__option">
-                            <router-link to="/" tag="a">Home</router-link>
-                            <span>Shop</span>
+                            <router-link to="/" tag="a">Trang chủ</router-link>
+                            <span>Cửa hàng</span>
                         </div>
                     </div>
                 </div>
@@ -18,7 +18,7 @@
 
 <script>
     export default {
-        
+
     }
 </script>
 
