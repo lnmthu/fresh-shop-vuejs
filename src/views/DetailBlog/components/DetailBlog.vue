@@ -1,12 +1,14 @@
 <template>
   <div class="col-lg-8 col-md-7 order-md-1 order-1">
     <div class="blog__details__text">
-      <h3 v-html="currentBlog.description">
+      <h3 v-html="currentBlog.title">
       </h3>
+      <h5 v-html="currentBlog.description">
+      </h5>
       <img :src="currentBlog.image" alt="" />
       <p v-html="currentBlog.body">
       </p>
-      
+
 
     </div>
     <div class="blog__details__content">

@@ -10,8 +10,9 @@
                 :src="currentProduct.image_uri"
                 alt=""
               />
+              fa fa-heart
             </div>
-            <div class="product__details__pic__slider owl-carousel">
+            <!-- <div class="product__details__pic__slider owl-carousel">
               <img
                 data-imgbigurl="dist/img/product/details/product-details-2.jpg"
                 src="dist/img/product/details/thumb-1.jpg"
@@ -32,25 +33,25 @@
                 src="dist/img/product/details/thumb-4.jpg"
                 alt=""
               />
-            </div>
+            </div> -->
           </div>
         </div>
         <div class="col-lg-6 col-md-6">
           <div class="product__details__text">
             <h3>{{ currentProduct.name }}</h3>
-            <div class="product__details__rating">
+            <!-- <div class="product__details__rating">
               <i class="fa fa-star"></i>
               <i class="fa fa-star"></i>
               <i class="fa fa-star"></i>
               <i class="fa fa-star"></i>
-              <i class="fa fa-star-half-o"></i>
-              <span>(18 reviews)</span>
+              <i class="fa fa-star-half-o"></i> -->
+              <!-- <span>(18 reviews)</span> -->
             </div>
             <div class="product__details__price">
               {{ currentProduct.price }}
             </div>
-            <p v-html="currentProduct.description">
-            </p>
+            <!-- <p v-html="currentProduct.description">
+            </p> -->
             <!-- <div class="product__details__quantity">
               <div class="quantity">
                 <div class="pro-qty">
@@ -69,15 +70,7 @@
                 <span>01 day shipping. <samp>Free pickup today</samp></span>
               </li>
               <li><b>Weight</b> <span>0.5 kg</span></li>
-              <li>
-                <b>Share on</b>
-                <div class="share">
-                  <a href="#"><i class="fa fa-facebook"></i></a>
-                  <a href="#"><i class="fa fa-twitter"></i></a>
-                  <a href="#"><i class="fa fa-instagram"></i></a>
-                  <a href="#"><i class="fa fa-pinterest"></i></a>
-                </div>
-              </li>
+
             </ul>
           </div>
         </div>
