@@ -3,8 +3,8 @@
     <div class="blog__details__text">
       <h3 v-html="currentBlog.title">
       </h3>
-      <h5 v-html="currentBlog.description">
-      </h5>
+      <h4 v-html="currentBlog.description">
+      </h4>
       <img :src="currentBlog.image" alt="" />
       <p v-html="currentBlog.body">
       </p>

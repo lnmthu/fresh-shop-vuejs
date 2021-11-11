@@ -20,8 +20,9 @@
                   v-html="value.title">
           <div class="blog__item">
 
-            <div class="blog__item__pic">
-              <img :src="value.image" alt="" />
+            <div class="blog__item__pic"
+           :style="{ backgroundImage: 'url(' + value.image_uri + ')' }"
+            >
             </div>
             <div class="blog__item__text">
               <ul>

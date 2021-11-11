@@ -14,6 +14,10 @@
           v-for="(value, index) in getListBlogNewest()"
           :key="index"
         >
+        <router-link
+                  tag="a"
+                  :to="{ name: 'detailBlog', params: { id: value.id } }"
+                >
           <div class="blog__item">
             <div class="blog__item__pic">
               <img :src="value.image" alt="" />
@@ -25,16 +29,13 @@
                   {{ formatDate(value.created_at) }}
                 </li>
               </ul>
-              <h5>
-                <router-link
-                  tag="a"
-                  :to="{ name: 'detailBlog', params: { id: value.id } }"
-                  v-html="value.title"
-                ></router-link>
+              <h5 v-html="value.title">
               </h5>
               <p v-html="value.description"></p>
             </div>
           </div>
+        </router-link>
+
         </div>
       </div>
     </div>

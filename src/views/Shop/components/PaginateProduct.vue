@@ -3,13 +3,13 @@
     <div class="filter__item">
       <div class="row">
         <div class="col-lg-4 col-md-5">
-          <div class="filter__sort">
+          <!-- <div class="filter__sort">
             <span>Sort By</span>
             <select>
               <option value="0">Default</option>
               <option value="0">Default</option>
             </select>
-          </div>
+          </div> -->
         </div>
         <div class="col-lg-4 col-md-4">
           <div class="filter__found">
@@ -45,9 +45,9 @@
           >
             <ul class="product__item__pic__hover">
               <li>
-                <a href="#"><i class="fa fa-heart"></i></a>
+                <a ><i class="fa fa-heart"></i></a>
               </li>
-              
+
             </ul>
           </div>
           <div class="product__item__text">

@@ -10,7 +10,6 @@
                 :src="currentProduct.image_uri"
                 alt=""
               />
-              fa fa-heart
             </div>
             <!-- <div class="product__details__pic__slider owl-carousel">
               <img

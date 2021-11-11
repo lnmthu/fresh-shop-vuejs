@@ -11,6 +11,7 @@
         </div>
       </div>
       <div class="row featured__filter">
+
         <div
           v-for="(product, index) in getListFeaturedProduct() "
           :key="index"
@@ -19,26 +20,34 @@
             getSkuCategory(product.category_unique_id)
           "
         >
-          <div class="featured__item">
-            <div
-              class="featured__item__pic set-bg"
-              :style="{ backgroundImage: 'url(' + product.image_uri + ')' }"
-            >
-             
-            </div>
-            <div class="featured__item__text">
-              <h6>
-                 <router-link
+         <router-link
                   tag="a"
                   :to="{
                     name: 'detailProduct',
                     params: { unique_id: product.unique_id },
                   }"
-                  >{{ product.name }}</router-link>
+                  >
+          <div class="featured__item">
+            <div
+              class="featured__item__pic set-bg"
+              :style="{ backgroundImage: 'url(' + product.image_uri + ')' }"
+            >
+             <ul class="product__item__pic__hover">
+              <li>
+                <a><i class="fa fa-heart"></i></a>
+              </li>
+
+            </ul>
+
+            </div>
+            <div class="featured__item__text">
+              <h6>
+                 {{ product.name }}
               </h6>
               <h5>{{ product.price }}</h5>
             </div>
           </div>
+          </router-link>
         </div>
       </div>
     </div>

@@ -28,9 +28,9 @@
             >
               <ul class="product__item__pic__hover">
                 <li>
-                  <a href="#"><i class="fa fa-heart"></i></a>
+                  <a ><i class="fa fa-heart"></i></a>
                 </li>
-            
+
               </ul>
             </div>
             <div class="product__item__text">
