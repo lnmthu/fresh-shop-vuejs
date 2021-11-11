@@ -26,7 +26,7 @@
         </div>
       </div>
     </section>
-    <RelatedBlog/>
+    <!-- <RelatedBlog/> -->
   </div>
 </template>
 

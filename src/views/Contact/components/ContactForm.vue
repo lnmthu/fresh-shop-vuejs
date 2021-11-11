@@ -8,8 +8,6 @@
           </div>
         </div>
       </div>
-      <p v-if="success" class="success">{{success}}</p>
-        <ValidationObserver v-slot="{ invalid }">
     <form @submit.prevent="onSubmit">
                 <div class="row">
           <div class="col-lg-6 col-md-6">
@@ -45,6 +43,8 @@
             <textarea v-model.lazy="postForm.message" placeholder="Lời nhắn"></textarea>
             <span class="error">{{ errors[0] }}</span>
             </ValidationProvider>
+                  <p v-if="success" class="success">{{success}}</p>
+        <ValidationObserver v-slot="{ invalid }">
       <button type="submit" :disabled="invalid" class="site-btn">Gửi</button>
           </div>
         </div>
@@ -89,13 +89,16 @@ export default {
 <style scoped>
 
 .error {
-  display: block;
-  color:red;
-  margin-bottom: 20px;
-  margin-left: 20px;
+  color: red;
+font-size: x-large;
+font-weight: inherit;
+text-align: center;
 }
 .success{
-  color:chartreuse
+  color: darkblue;
+font-size: x-large;
+font-weight: inherit;
+text-align: center;
 }
 
 </style>

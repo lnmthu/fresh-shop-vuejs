@@ -19,7 +19,6 @@
                   :to="{ name: 'detailBlog', params: { id: value.id } }"
                   v-html="value.title">
           <div class="blog__item">
-
             <div class="blog__item__pic"
            :style="{ backgroundImage: 'url(' + value.image + ')' }"
             >
