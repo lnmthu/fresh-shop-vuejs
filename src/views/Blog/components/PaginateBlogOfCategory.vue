@@ -6,6 +6,11 @@
         v-for="(value, index) in listBlogOfCategoryPaginate"
         :key="index"
       >
+      <router-link
+                tag="a"
+                :to="{ name: 'detailBlog', params: { id: value.id } }"
+
+              >
         <div class="blog__item">
           <div class="blog__item__pic">
             <img :src="value.image" alt="" />
@@ -18,13 +23,8 @@
                 }}</i>
               </li>
             </ul>
-            <h5>
-              <router-link
-                tag="a"
-                :to="{ name: 'detailBlog', params: { id: value.id } }"
-                v-html="value.title"
-              >
-              </router-link>
+            <h5 v-html="value.title">
+
             </h5>
             <p v-html="value.description"></p>
             <router-link
@@ -35,6 +35,8 @@
             ></router-link>
           </div>
         </div>
+                      </router-link>
+
       </div>
       <div class="col-lg-12">
         <div class="product__pagination blog__pagination">

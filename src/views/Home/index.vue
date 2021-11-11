@@ -1,8 +1,6 @@
 <template>
   <div>
     <Hero />
-    <Category />
-    <FeaturedProduct />
     <div class="banner">
       <div class="container">
         <div class="row">
@@ -20,6 +18,8 @@
       </div>
     </div>
     <FilterProduct/>
+    <Category />
+    <FeaturedProduct />
     <NewestBlog />
   </div>
 </template>
@@ -33,10 +33,10 @@ import NewestBlog from "./components/NewestBlog";
 
 export default {
 
-  components: { 
-    Hero, 
-    Category, 
-    FeaturedProduct, 
+  components: {
+    Hero,
+    Category,
+    FeaturedProduct,
     FilterProduct,
     NewestBlog
     },

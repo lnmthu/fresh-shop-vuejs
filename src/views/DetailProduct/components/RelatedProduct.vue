@@ -14,6 +14,13 @@
           v-for="(value, index) in getReloatedList()"
           :key="index"
         >
+        <router-link
+                  tag="a"
+                  :to="{
+                    name: 'detailProduct',
+                    params: { unique_id: value.unique_id },
+                  }"
+                  >
           <div class="product__item">
             <div
               class="product__item__pic set-bg"
@@ -33,18 +40,13 @@
             </div>
             <div class="product__item__text">
               <h6>
-                <router-link
-                  tag="a"
-                  :to="{
-                    name: 'detailProduct',
-                    params: { unique_id: value.unique_id },
-                  }"
-                  >{{ value.name }}</router-link
+                {{ value.name }}
                 >
               </h6>
               <h5>{{ value.price }}</h5>
             </div>
           </div>
+          </router-link
         </div>
       </div>
     </div>
