@@ -79,7 +79,7 @@ export default {
     methods:{
         onSubmit(){
             this.$http.post("https://fruitadmin.tk/api/contact",this.postForm).then((response) => {
-              this.success="Message was sent"
+              this.success="Dạ cảm ơn bạn đã để lại lại nhắn cho FruitShop."
         }, (error) => { console.log(error) });
     },
         }
@@ -95,7 +95,7 @@ font-weight: inherit;
 text-align: center;
 }
 .success{
-  color: darkblue;
+  color: cadetblue;
 font-size: x-large;
 font-weight: inherit;
 text-align: center;
