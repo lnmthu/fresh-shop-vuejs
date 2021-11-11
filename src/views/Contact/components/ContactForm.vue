@@ -45,7 +45,10 @@
             </ValidationProvider>
                   <p v-if="success" class="success">{{success}}</p>
         <ValidationObserver v-slot="{ invalid }">
-      <button type="submit" :disabled="invalid" class="site-btn">Gửi</button>
+      <button
+        :loading="loading && indexClicked === index"
+       :disabled="loading && indexClicked === index"
+       type="submit"  class="site-btn">Gửi</button>
           </div>
         </div>
       </form>
@@ -68,6 +71,7 @@ extend("required", {
 export default {
     data(){
         return {
+            indexClicked: undefined,
             postForm:{
                 name:null,
                 email:null,
@@ -78,6 +82,7 @@ export default {
     },
     methods:{
         onSubmit(){
+            this.indexClicked = index;
             this.$http.post("https://fruitadmin.tk/api/contact",this.postForm).then((response) => {
               this.success="Dạ cảm ơn bạn đã để lại lại nhắn cho FruitShop."
         }, (error) => { console.log(error) });
