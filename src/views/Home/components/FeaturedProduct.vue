@@ -7,17 +7,6 @@
             <h2>Sản phẩm nổi bật</h2>
           </div>
           <div class="featured__controls">
-            <ul>
-              <li class="active" data-filter="*">Tất cả</li>
-              <li
-                v-for="(category, index) in getListFeturedCategory()"
-                :key="index"
-                :data-filter="'.' + category.sku"
-              >
-                {{ category.name }}
-              </li>
-
-            </ul>
           </div>
         </div>
       </div>
@@ -72,7 +61,7 @@ export default {
   computed: {
     ...mapGetters(["listCategory", "listProduct"]),
   },
-   
+
   methods: {
     getSkuCategory(unique_id) {
       for (var category of this.listCategory) {
