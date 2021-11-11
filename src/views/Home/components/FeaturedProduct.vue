@@ -32,15 +32,10 @@
               class="featured__item__pic set-bg"
               :style="{ backgroundImage: 'url(' + product.image_uri + ')' }"
             >
-               <div class="header__cart">
-            <ul>
-              <li>
-                <a href=""><i class="fa fa-heart"></i> <span>1</span></a>
-              </li>
+            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+             </ul>
 
-            </ul>
-            <div class="header__cart__price">item: <span>$150.00</span></div>
-          </div>
 
             </div>
             <div class="featured__item__text">
