@@ -6,8 +6,8 @@
           <div class="col-lg-6 col-md-6">
             <div class="header__top__left">
               <ul>
-                <li><i class="fa fa-envelope"></i> hello@colorlib.com</li>
-                <li>Free Shipping for all Order of $99</li>
+                <li><i class="fa fa-envelope"></i> thuicetea@gmail.com</li>
+                <li><i class="fa fa-phone"></i> 0161 123 3221</li>
               </ul>
             </div>
           </div>
@@ -19,18 +19,18 @@
                 <a href="#"><i class="fa fa-linkedin"></i></a>
                 <a href="#"><i class="fa fa-pinterest-p"></i></a>
               </div>
-              <div class="header__top__right__language">
+              <!-- <div class="header__top__right__language">
                 <img src="dist/img/language.png" alt="" />
                 <div>English</div>
-                <span class="arrow_carrot-down"></span>
+                <!-- <span class="arrow_carrot-down"></span>
                 <ul>
                   <li><a href="#">Spanis</a></li>
                   <li><a href="#">English</a></li>
-                </ul>
-              </div>
-              <div class="header__top__right__auth">
+                </ul> -->
+              </div> -->
+              <!-- <div class="header__top__right__auth">
                 <a href="#"><i class="fa fa-user"></i> Login</a>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -48,11 +48,11 @@
             <ul>
               <li>
                 <router-link to="/" tag="a" active-class="active" exact
-                  >Home</router-link>
+                  >Trang chủ</router-link>
                 <li><router-link to="/shop" tag="a" active-class="active" exact>Shop</router-link></li>
 
                 <li><router-link to="/blog" tag="a" active-class="active" exact>Blog</router-link></li>
-                <li><router-link to="/contact" tag="a" active-class="active" exact>Contact</router-link></li>
+                <li><router-link to="/contact" tag="a" active-class="active" exact>Liên hệ</router-link></li>
             </ul>
           </nav>
         </div>

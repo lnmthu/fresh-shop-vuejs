@@ -6,7 +6,7 @@
           <div class="hero__categories">
             <div class="hero__categories__all">
               <i class="fa fa-bars"></i>
-              <span>All departments</span>
+              <span>Các loại trái cây</span>
             </div>
             <ul>
               <li v-for="(value, index) in listCategory" :key="index">
@@ -21,7 +21,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-lg-9">
+        <!-- <div class="col-lg-9">
           <div class="hero__search">
             <div class="hero__search__form">
               <form action="#">
@@ -51,7 +51,7 @@
               <a href="#" class="primary-btn">SHOP NOW</a>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
