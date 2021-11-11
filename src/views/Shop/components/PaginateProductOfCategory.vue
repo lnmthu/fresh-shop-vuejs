@@ -18,6 +18,13 @@
         v-for="(product, index) in listProOfCatePaginate"
         :key="index"
       >
+      <router-link
+                  tag="a"
+                  :to="{
+                    name: 'detailProduct',
+                    params: { unique_id: product.unique_id },
+                  }"
+                  >
         <div class="product__item">
           <div
             class="product__item__pic set-bg"
@@ -37,17 +44,12 @@
           </div>
           <div class="product__item__text">
             <h6>
-               <router-link
-                  tag="a"
-                  :to="{
-                    name: 'detailProduct',
-                    params: { unique_id: product.unique_id },
-                  }"
-                  >{{ product.name }}</router-link>
+               {{ product.name }}
             </h6>
             <h5>{{ product.price }}</h5>
           </div>
         </div>
+        </router-link>
       </div>
     </div>
     <div class="product__pagination">

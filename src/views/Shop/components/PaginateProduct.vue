@@ -30,12 +30,18 @@
         v-for="(product, index) in listProductPaginate"
         :key="index"
       >
+      <router-link>
+                  tag="a"
+                  :to="{
+                    name: 'detailProduct',
+                    params: { unique_id: product.unique_id },
+                  }"
         <div class="product__item">
           <div
             class="product__item__pic set-bg"
             :style="{ backgroundImage: 'url(' + product.image_uri + ')' }"
           >
-            <ul class="product__item__pic__hover">
+            <!-- <ul class="product__item__pic__hover">
               <li>
                 <a href="#"><i class="fa fa-heart"></i></a>
               </li>
@@ -45,21 +51,17 @@
               <li>
                 <a href="#"><i class="fa fa-shopping-cart"></i></a>
               </li>
-            </ul>
+            </ul> -->
           </div>
           <div class="product__item__text">
             <h6>
-               <router-link
-                  tag="a"
-                  :to="{
-                    name: 'detailProduct',
-                    params: { unique_id: product.unique_id },
-                  }"
-                  >{{ product.name }}</router-link>
+              {{ product.name }}
             </h6>
             <h5>{{ product.price }}</h5>
           </div>
         </div>
+        </router-link>
+
       </div>
     </div>
     <div class="product__pagination">
